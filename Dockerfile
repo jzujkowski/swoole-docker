@@ -23,8 +23,6 @@ RUN apk add --no-cache \
     g++ \
     gcc \
     git \
-    jemalloc \
-    jemalloc-dev \
     libaio-dev \
     libc-dev \
     libev \
