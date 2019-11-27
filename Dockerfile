@@ -1,6 +1,6 @@
 FROM php:7.3-fpm
 
-#RUN apk add autoconf clang gcc
+RUN apt-get update && apt-get install -y wget
 
 RUN pecl install redis-5.1.1 \
     && pecl install swoole-4.4.12 \
