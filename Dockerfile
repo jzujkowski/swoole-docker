@@ -1,6 +1,6 @@
-FROM php:7.3-fpm-alpine
+FROM php:7.3-fpm
 
-RUN apk add autoconf clang gcc
+#RUN apk add autoconf clang gcc
 
 RUN pecl install redis-5.1.1 \
     && pecl install xdebug-2.6.0 \
