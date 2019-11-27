@@ -3,9 +3,8 @@ FROM php:7.3-fpm
 #RUN apk add autoconf clang gcc
 
 RUN pecl install redis-5.1.1 \
-    && pecl install xdebug-2.6.0 \
     && pecl install swoole-4.4.12 \
-    && docker-php-ext-enable redis xdebug swoole
+    && docker-php-ext-enable redis swoole
 
 WORKDIR /app
 
