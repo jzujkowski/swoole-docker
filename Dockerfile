@@ -1,5 +1,7 @@
 FROM php:7.3-fpm-alpine
 
+RUN apk add autoconf
+
 RUN pecl install redis-5.1.1 \
     && pecl install xdebug-2.6.0 \
     && pecl install swoole-4.4.12 \
