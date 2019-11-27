@@ -1,7 +1,5 @@
 FROM php:7.3-alpine
 
-MAINTAINER twosee <twose@qq.com>
-
 # system tools
 RUN apk update && \
     apk add --no-cache \
