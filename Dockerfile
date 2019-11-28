@@ -80,4 +80,8 @@ ENTRYPOINT ["/usr/local/bin/dumb-init", "--"]
 
 VOLUME /code
 
+EXPOSE 1215
+EXPOSE 9000
+EXPOSE 9501
+
 CMD ["/app/run.sh"]
