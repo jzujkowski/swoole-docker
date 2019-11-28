@@ -69,8 +69,8 @@ RUN curl -sS https://getcomposer.org/installer | php && \
 
 WORKDIR /app
 
-COPY swoole.php /app/swoole.php
-COPY run.sh /app/run.sh
+COPY swoole.php swoole.php
+COPY run.sh run.sh
 RUN ["chmod", "+x", "run.sh"]
 
 RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.2/dumb-init_1.2.2_amd64
