@@ -71,6 +71,7 @@ WORKDIR /app
 
 COPY swoole.php /app/swoole.php
 COPY run.sh /app/run.sh
+RUN chmod +x /app/run.sh
 
 RUN wget -O /usr/local/bin/dumb-init https://github.com/Yelp/dumb-init/releases/download/v1.2.2/dumb-init_1.2.2_amd64
 RUN chmod +x /usr/local/bin/dumb-init
